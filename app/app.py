@@ -34,7 +34,7 @@ df_recommendations_similar = df[(df['category_name'] == selected_article['catego
 t.recommendations(df_recommendations_similar)
 
 ### Second row of recommended article, based on a different cluster
-st.subheader('Why stop there? Discover more today:')
+st.subheader('Looking for something else? Discover more today:')
 
 df_recommendations_diverse = df[(df['k_means'] != selected_article['k_means'])].sample(8)
 
